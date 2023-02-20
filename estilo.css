@@ -1,0 +1,50 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');/*importando a fonte do google fonts*/
+
+    body {
+        margin: 0px; /*Margem externa*/
+        padding: 0px; /*Margem interna*/
+    }
+    #principal{
+        width: 100%;
+        height: 100px;
+        border: 1px solid black;
+        background-color: #303030;
+        display: flex; /*Configurando a div toda <nav> como flex*/
+        justify-content: space-between; /*Botao ficou do lado direito do <nav>*/
+        align-items: center; /*centralizando o botao*/
+        border-bottom: 1px solid #BABABA;
+    }
+    #menu {
+        display: flex; /*Definindo que o menu tem tamanho flex*/
+        width: 55%;
+        justify-content: space-around; /*Distribuindo os elementos do menu de uma maneira igual*/
+        align-items: center; /*alinhamento vertical de todos os itens (o menu fica posicionado no meio)*/
+    
+    }
+
+    #principal div a { /*id PRINCIPAL dentro da div a, ou seja, essa configuração é somente para as tags <a> de link*/
+        font-family: 'Inter'; /*configurando a fonte dentro da div menu*/
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        text-decoration: none; /*Tirar o underline do link*/
+    }
+
+    #principal div a:hover {/*mouse passando em cima de algum item*/
+        color:#CCCCCC;
+    }
+    #principal button{
+        margin-right: 5%;
+        background-color: #0c70f2;
+        border: 0px;
+
+        height: 40px;
+        width: 80px;
+        font-family: 'Inter';
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);/*criando a sombra no botao(horizontal,vertical,sombra,cor)*/
+        cursor: pointer;/*Para aparecer o cursor do mouse onde ele passa*/
+    }
